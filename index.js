@@ -7,13 +7,13 @@ const main = document.getElementById('main-el')
 
 function renderMovies() {
     const searchTerm = inputValue.value;
-    fetch(`http://www.omdbapi.com/?apikey=9148effd&s=${searchTerm}`)
+    fetch(`https://www.omdbapi.com/?apikey=9148effd&s=${searchTerm}`)
         .then(res => res.json())
         .then(data => {
             if (data.Response === "True") {
                 main.innerHTML=''
                 data.Search.forEach(film => {
-                    fetch(`http://www.omdbapi.com/?apikey=9148effd&i=${film.imdbID}`)
+                    fetch(`https://www.omdbapi.com/?apikey=9148effd&i=${film.imdbID}`)
                         .then(res => res.json())
                         .then(data => {
                             main.innerHTML += `
