@@ -8,7 +8,7 @@ if (watchlist.length === 0) {
     main.innerHTML = '';
 
     watchlist.forEach(id => {
-        fetch(`http://www.omdbapi.com/?apikey=9148effd&i=${id}`)
+        fetch(`https://www.omdbapi.com/?apikey=9148effd&i=${id}`)
             .then(res => res.json())
             .then(data => {
                 main.innerHTML += `
