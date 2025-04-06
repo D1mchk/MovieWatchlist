@@ -1,0 +1,146 @@
+html, body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #fff;
+}
+
+header {
+    position: relative;
+    padding: 0 3em;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('./images/header.png');
+    background-position: 0 -25vw;
+    background-size: cover;
+    height: 13rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    overflow: visible; /* на всякий случай, если контейнер торчит наружу */
+}
+
+h1 {
+    font-size: 2.7em;
+    font-weight: 800;
+    margin: 0;
+}
+
+.watch-latter {
+    font-weight: 700;
+    font-size: 1em;
+    background: none;
+    color: white;
+    text-decoration: none;
+}
+
+.search-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%); /* 50% вниз = торчит ровно пополам */
+    width: 80%;
+    display: flex;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+input[type="search"] {
+    flex: 1;
+    padding: 0.7em 1em;
+    font-size: 1.2em;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+}
+
+.search-button {
+    padding: 0.7em 1.2em;
+    font-size: 1.2em;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    font-weight: 600;
+    color: #333;
+}
+
+.search-button:hover {
+    background-color: #ccc;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.start-info{
+    color: #DFDDDD;
+
+}
+
+.fa-film{
+    font-size: 4.375rem;
+}
+
+.full-info{
+    margin: 0 4em;
+    padding: 4em 3.75em;
+    display: flex;
+    gap: 4em;
+    border-bottom: 1.5px solid #E5E7EB;
+}
+
+.poster{
+    width: 10rem;
+}
+
+h2{
+    color: #000000;
+    font-weight: 600;
+}
+
+.time,
+.genre,
+.rate,
+.watch-list{
+    font-weight: 400;
+    font-size: 1em;
+    color: #111827;
+}
+
+.genre{
+    margin: 0 2em;
+}
+.plot{
+    color: #6B7280;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+.fa-star{
+    margin-left: 1em;
+    color: #FEC654;
+}
+
+.remove-btn{
+    color: #111827;
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+
+.remove-btn:hover{
+    cursor: pointer;
+}
